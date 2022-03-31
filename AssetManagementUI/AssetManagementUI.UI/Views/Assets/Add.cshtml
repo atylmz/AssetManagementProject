@@ -1,0 +1,224 @@
+﻿@model AssetFullDTO
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layoutmain.cshtml";
+}
+<link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+<script src="~/lib/font-awesome/js/all.js"></script>
+
+<div class="container">
+    <form class="form" asp-controller="Assets" asp-action="add" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="barcode" class="custom-control-input" id="switcher" checked>
+                    <label class="custom-control-label" for="switcher">Barkodlu Ürün</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div><label><a style="color:red">* </a>Ürünün Giriş tarihi</label></div>
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" aria-label="giris" id="date" onload="getDate()" asp-for="EntryDate">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="barcodeLabel"><label><a style="color:red">* </a>Barkod</label></div>
+                <div id="barcodeInput" class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Barkod" asp-for="Barcode">
+                    <span class="input-group-text"><i class="fa-solid fa-barcode"></i></span>
+                </div>
+                <div id="withoutBarcode" class="row">
+                    <div class="col-md-3">
+                        <div><label><a style="color:red">* </a>Miktar</label></div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="grubu" asp-for="Quantity">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div><label><a style="color:red">* </a>Birim</label></div>
+                        <div class="input-group mb-3">
+                            <select class="form-select form-control" aria-label="unit" asp-for="UnitId">
+                                <option value="default" selected>Seçiniz...</option>
+                                @foreach (var item in ViewBag.unit)
+                                {
+                                    <option value="@item.UnitId">@item.Description</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 ">
+                <div><label>Ürünün Emeklilik Tarihi</label></div>
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" aria-label="emeklilik" disabled asp-for="RetireDate">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div name="option" class="col-md-6">
+                <div><label><a style="color:red">* </a>Ürün Grubu</label></div>
+                <div class="input-group mb-3">
+                    <select class="form-select form-control" aria-label="Default select example" asp-for="GroupId">
+                        <option value="default" selected>Seçiniz...</option>
+                        @foreach (var item in ViewBag.group)
+                        {
+                            <option value="@item.GroupId">@item.Description</option>
+                        } 
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div><label>Ürünün Maliyeti</label></div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="cost" asp-for="Cost">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div name="option" class="col-md-6">
+                <div><label><a style="color:red">* </a>Ürün Tipi</label></div>
+                <div class="input-group mb-3">
+                    <select class="form-select form-control" aria-label="Default select example" asp-for="TypeId">
+                        <option value="default" selected>Seçiniz...</option>
+                        @foreach (var item in ViewBag.type)
+                        {
+                            <option value="@item.TypeId">@item.Description</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div name="option" class="col-md-6">
+                <div><label>Ürünün Para Birimi</label></div>
+                <div class="input-group mb-3">
+                    <select class="form-select form-control" aria-label="Default select example" asp-for="CurrencyId">
+                        <option value="default" selected>Seçiniz...</option>
+                        @foreach (var item in ViewBag.currency)
+                        {
+                            <option value="@item.CurrencyId">@item.Description</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div name="option" class="col-md-6">
+                <div><label><a style="color:red">* </a>Marka</label></div>
+                <div class="input-group mb-3">
+                    <select class="form-select form-control" aria-label="Default select example" id="brand" asp-for="BrandId">
+                        <option value="default" selected>Seçiniz...</option>
+                        @foreach (var item in ViewBag.brand)
+                        {
+                            <option value="@item.BrandId">@item.Description</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div><label>Ürünün Güncel Fiyatı</label></div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="price" asp-for="Price1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div name="option" class="col-md-6">
+                <div><label><a style="color:red">* </a>Model</label></div>
+                <div class="input-group mb-3">
+                    <select class="form-select form-control " aria-label="Default select example" disabled asp-for="ModelId">
+                        <option value="default" selected>Seçiniz...</option>
+                        @foreach (var item in ViewBag.model)
+                        {
+                            <option value="@item.ModelId">@item.Description</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div name="option" class="col-md-6">
+                <div><label>Ürünün Güncel Para Birimi</label></div>
+                <div class="input-group mb-3">
+                    <select class="form-select form-control" aria-label="Default select example" asp-for="PriceCurrencyId">
+                        <option value="default" selected>Seçiniz...</option>
+                        @foreach (var item in ViewBag.currency)
+                        {
+                            <option value="@item.CurrencyId">@item.Description</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div name="option" class="col-md-6">
+                <div><label>Garantili mi ?</label></div>
+                <div class="input-group mb-3">
+                    <select class="form-select form-control" aria-label="Default select example" asp-for="Guarantee">
+                        <option value="default" selected>Seçiniz...</option>
+                        <option value="true">Evet</option>
+                        <option value="false">Hayır</option>        
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div><label><a style="color:red">* </a>Açıklama</label></div>
+                <div class="input-group mb-3">
+                    <textarea class="form-control" asp-for="Description">  </textarea>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-primary form-control">Submit</button>
+    </form>
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+<script>
+    $(document).ready(() => {
+        var now = new Date();
+        var day = ("0" + now.getDate()).slice(-2);
+        var month = ("0" + (now.getMonth() + 1)).slice(-2);
+        var today = now.getFullYear() + "-" + (month) + "-" + (day);
+        $('#date').val(today);
+        $('#withoutBarcode').hide();
+
+        $('#switcher').click(() => {
+            if ($("#switcher").is(':checked')) {
+                $('#withoutBarcode').hide();
+                $("#barcodeLabel").show();
+                $("#barcodeInput").show();
+            }
+            else {
+                $("#barcodeLabel").hide();
+                $("#barcodeInput").hide();
+                $('#withoutBarcode').show();
+            }
+
+        })
+        $.validator.addMethod("valueNotEquals", function (value, element, arg) {
+            return arg !== value;
+        }, "Value must not equal arg.");
+
+        $('#submit').click(() => {
+            $("div[name='option']").validate({
+                rules: {
+                    SelectName: { valueNotEquals: "default" }
+                },
+                messages: {
+                    SelectName: { valueNotEquals: "Please select an item!" }
+                }
+
+            });
+        });
+       
+
+
+    });
+
+</script>

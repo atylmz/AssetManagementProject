@@ -1,0 +1,15 @@
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\bin\Debug\net5.0\AssetManagementAPI.Entity.deps.json
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\bin\Debug\net5.0\AssetManagementAPI.Entity.runtimeconfig.json
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\bin\Debug\net5.0\AssetManagementAPI.Entity.runtimeconfig.dev.json
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\bin\Debug\net5.0\AssetManagementAPI.Entity.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\bin\Debug\net5.0\ref\AssetManagementAPI.Entity.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\bin\Debug\net5.0\AssetManagementAPI.Entity.pdb
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.csproj.AssemblyReference.cache
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.AssemblyInfoInputs.cache
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.AssemblyInfo.cs
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.csproj.CoreCompileInputs.cache
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\ref\AssetManagementAPI.Entity.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.pdb
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Entity\obj\Debug\net5.0\AssetManagementAPI.Entity.genruntimeconfig.cache

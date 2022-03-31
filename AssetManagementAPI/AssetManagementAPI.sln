@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagementAPI.Entity", "AssetManagementAPI.Entity\AssetManagementAPI.Entity.csproj", "{0CD4F531-2E45-4EBB-AEB0-0F5C3D62591D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagementAPI.DataAccess", "AssetManagementAPI.DataAccess\AssetManagementAPI.DataAccess.csproj", "{1E3A5B06-BF81-4F48-B055-71ECD486BA1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagementAPI.Core", "AssetManagementAPI.Core\AssetManagementAPI.Core.csproj", "{E6C6F71A-8FDF-4D49-9CB4-4DFD735C86C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagementAPI.Bussiness", "AssetManagementAPI.Bussiness\AssetManagementAPI.Bussiness.csproj", "{59933DAF-AA07-4826-9CC5-1AF5A8CC31D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagementAPI.API", "AssetManagementAPI.API\AssetManagementAPI.API.csproj", "{9DB513C6-D9CA-4A6C-AF77-6EF594F655CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagementAPI.DtoModel", "AssetManagementAPI.DtoModel\AssetManagementAPI.DtoModel.csproj", "{1F9CCDE5-8CC3-46F6-BFE6-D16180DB7488}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD4F531-2E45-4EBB-AEB0-0F5C3D62591D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD4F531-2E45-4EBB-AEB0-0F5C3D62591D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD4F531-2E45-4EBB-AEB0-0F5C3D62591D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD4F531-2E45-4EBB-AEB0-0F5C3D62591D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3A5B06-BF81-4F48-B055-71ECD486BA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3A5B06-BF81-4F48-B055-71ECD486BA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3A5B06-BF81-4F48-B055-71ECD486BA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3A5B06-BF81-4F48-B055-71ECD486BA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C6F71A-8FDF-4D49-9CB4-4DFD735C86C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C6F71A-8FDF-4D49-9CB4-4DFD735C86C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C6F71A-8FDF-4D49-9CB4-4DFD735C86C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C6F71A-8FDF-4D49-9CB4-4DFD735C86C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59933DAF-AA07-4826-9CC5-1AF5A8CC31D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59933DAF-AA07-4826-9CC5-1AF5A8CC31D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59933DAF-AA07-4826-9CC5-1AF5A8CC31D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59933DAF-AA07-4826-9CC5-1AF5A8CC31D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB513C6-D9CA-4A6C-AF77-6EF594F655CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB513C6-D9CA-4A6C-AF77-6EF594F655CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB513C6-D9CA-4A6C-AF77-6EF594F655CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB513C6-D9CA-4A6C-AF77-6EF594F655CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9CCDE5-8CC3-46F6-BFE6-D16180DB7488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9CCDE5-8CC3-46F6-BFE6-D16180DB7488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9CCDE5-8CC3-46F6-BFE6-D16180DB7488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9CCDE5-8CC3-46F6-BFE6-D16180DB7488}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A70FAAF-8171-4220-ABB3-79AEED999365}
+	EndGlobalSection
+EndGlobal

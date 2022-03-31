@@ -1,0 +1,15 @@
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\bin\Debug\net5.0\AssetManagementAPI.DtoModel.deps.json
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\bin\Debug\net5.0\AssetManagementAPI.DtoModel.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\bin\Debug\net5.0\ref\AssetManagementAPI.DtoModel.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\bin\Debug\net5.0\AssetManagementAPI.DtoModel.pdb
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\bin\Debug\net5.0\AssetManagementAPI.Entity.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\bin\Debug\net5.0\AssetManagementAPI.Entity.pdb
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.csproj.AssemblyReference.cache
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.AssemblyInfoInputs.cache
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.AssemblyInfo.cs
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.csproj.CoreCompileInputs.cache
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.csproj.CopyComplete
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\ref\AssetManagementAPI.DtoModel.dll
+C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.DtoModel\obj\Debug\net5.0\AssetManagementAPI.DtoModel.pdb
