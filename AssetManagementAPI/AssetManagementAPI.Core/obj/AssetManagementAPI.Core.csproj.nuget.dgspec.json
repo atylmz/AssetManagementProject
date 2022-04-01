@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {}
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
+        "projectUniqueName": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
         "projectName": "AssetManagementAPI.Core",
-        "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
+        "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\obj\\",
+        "outputPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

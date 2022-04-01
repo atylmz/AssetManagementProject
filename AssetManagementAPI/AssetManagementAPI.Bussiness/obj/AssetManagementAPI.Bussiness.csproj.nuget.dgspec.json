@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj": {}
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj": {
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj",
+        "projectUniqueName": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj",
         "projectName": "AssetManagementAPI.Bussiness",
-        "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj",
+        "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\obj\\",
+        "outputPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {
-                "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj"
+              "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {
+                "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj"
               },
-              "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj": {
-                "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj"
+              "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj": {
+                "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj"
               },
-              "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj": {
-                "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj"
+              "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj": {
+                "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
+        "projectUniqueName": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
         "projectName": "AssetManagementAPI.Core",
-        "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
+        "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\obj\\",
+        "outputPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj": {
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj",
+        "projectUniqueName": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj",
         "projectName": "AssetManagementAPI.DataAccess",
-        "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj",
+        "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\AssetManagementAPI.DataAccess.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\obj\\",
+        "outputPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,8 +166,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj": {
-                "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj"
+              "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj": {
+                "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj"
               }
             }
           }
@@ -208,14 +208,14 @@
         }
       }
     },
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj": {
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj",
+        "projectUniqueName": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj",
         "projectName": "AssetManagementAPI.DtoModel",
-        "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj",
+        "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\obj\\",
+        "outputPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -236,8 +236,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj": {
-                "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj"
+              "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj": {
+                "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj"
               }
             }
           }
@@ -276,14 +276,14 @@
         }
       }
     },
-    "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj": {
+    "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj",
+        "projectUniqueName": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj",
         "projectName": "AssetManagementAPI.Entity",
-        "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj",
+        "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\AssetManagementAPI.Entity.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Entity\\obj\\",
+        "outputPath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

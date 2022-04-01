@@ -14,10 +14,19 @@ namespace AssetManagementAPI.API.Controllers
     public class AssetController : ControllerBase
     {
         private readonly INewAssetService _asset;
+        private readonly IListOfAssetsService _list;
 
-        public AssetController(INewAssetService asset)
+        public AssetController(INewAssetService asset, IListOfAssetsService list)
         {
             _asset = asset;
+            _list = list;
+        }
+        [HttpGet("listofassets")]
+        public IActionResult ListOfAllAssets()
+        {
+            var result = _list.AllAssetList();
+
+            return Ok(result.Data);
         }
 
         [HttpPost("addasset")]

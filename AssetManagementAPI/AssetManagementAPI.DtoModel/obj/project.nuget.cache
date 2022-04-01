@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0bQo/+dGT8LcPNk1Gq3UiAKutatOJ142yNUshBs58XGElM9kE2/ASD3e46tknYiq6q0H8qMWYlE9mpgpgC2cHg==",
+  "dgSpecHash": "EMaZZEnAWaJbU5T1DvCdQ1jDtZCwtPW/wS4qnhNFMDx6NUNZ4WGR+pDRGb2qsQ4a74PicE9QSoDIwBxW1qFCdA==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj",
+  "projectFilePath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.DtoModel\\AssetManagementAPI.DtoModel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

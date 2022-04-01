@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dExN79qffVOw28ahjyqGtp+BEB32IE30aB7ujtJGDJ2+qHH5KSlLgKLwgqQVy/63e4Z+HeHKLL1BNooh8eB15A==",
+  "dgSpecHash": "U40Tc99T+P2ZYlEC0yYUfFm1ooBAytyPeQdhwXQAnp0eZKTVeCbgI7PftcI1SYgzAFm+wVQriQKvRm/zAV65ew==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj",
+  "projectFilePath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Bussiness\\AssetManagementAPI.Bussiness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

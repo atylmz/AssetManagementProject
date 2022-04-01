@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IezzQl4SSEZOkMTaiVfq2binJw1U13OrqzpNIXQi0qGk/axkeQ8WdVtNZC41RrRBAsuBSggb5l3jlDsmTDVhOA==",
+  "dgSpecHash": "773rbqo377hJRdBxlhscG5gFyI0zvhBRYNqb41bnlEXLnnIEWSaIqzdLncA8LDbrB2s6MOEf9JAuoCK5c1s+YA==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
+  "projectFilePath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.Core\\AssetManagementAPI.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

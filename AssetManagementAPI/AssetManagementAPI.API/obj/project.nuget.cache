@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VHduNyiPPUq3VBSxt6EbYKCbZfUFw/t6u4TQOj80iPjMpJnNtzZPnfZZ7nNnIhZQi2pBvWYtP73HIXsjSMpLDw==",
+  "dgSpecHash": "Qc6LrEvtLRL6Mcv1XD245aUYjrnyMfOotnOPe7oVBZaECWC77fMPauDmCitYreK8Y0lcjOhb/whXXvB5AfOpTw==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\AssetManagement\\AssetManagementAPI\\AssetManagementAPI.API\\AssetManagementAPI.API.csproj",
+  "projectFilePath": "C:\\workspace\\AssetManagementProject\\AssetManagementAPI\\AssetManagementAPI.API\\AssetManagementAPI.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

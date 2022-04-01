@@ -6238,11 +6238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workspace\\AssetManagement\\AssetManagementUI\\AssetManagementUI.UI\\AssetManagementUI.UI.csproj",
+      "projectUniqueName": "C:\\workspace\\AssetManagementProject\\AssetManagementUI\\AssetManagementUI.UI\\AssetManagementUI.UI.csproj",
       "projectName": "AssetManagementUI.UI",
-      "projectPath": "C:\\workspace\\AssetManagement\\AssetManagementUI\\AssetManagementUI.UI\\AssetManagementUI.UI.csproj",
+      "projectPath": "C:\\workspace\\AssetManagementProject\\AssetManagementUI\\AssetManagementUI.UI\\AssetManagementUI.UI.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\workspace\\AssetManagement\\AssetManagementUI\\AssetManagementUI.UI\\obj\\",
+      "outputPath": "C:\\workspace\\AssetManagementProject\\AssetManagementUI\\AssetManagementUI.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

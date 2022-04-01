@@ -50,7 +50,6 @@ namespace AssetManagementAPI.API
             services.AddDbContext<AssetManagementContext>(options => options.UseSqlServer("Server=DESKTOP-LN7BH6H\\SQLExpress;Database=AssetManagement;Trusted_Connection=True;"));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient(typeof(IBrandService), typeof(BrandManager));
-            //services.AddTransient<Repository<Brand>>();
             services.AddTransient(typeof(IModelService), typeof(ModelManager));
             services.AddTransient(typeof(ITypeService), typeof(TypeManager));
             services.AddTransient(typeof(IGroupService), typeof(GroupManager));
@@ -62,6 +61,8 @@ namespace AssetManagementAPI.API
             services.AddTransient(typeof(IAssetBarcodeService), typeof(AssetBarcodeManager));
             services.AddTransient(typeof(IAssetWithoutBarcodeService), typeof(AssetWithoutBarcodeManager));
             services.AddTransient(typeof(IPriceService), typeof(PriceManager));
+            services.AddTransient(typeof(IListOfAssetsService), typeof(ListOfAssets));
+     
 
 
         }
@@ -81,7 +82,7 @@ namespace AssetManagementAPI.API
             app.UseRouting();
 
             app.UseCors(options => {
-                options.WithOrigins("https://localhost:44358/").AllowAnyHeader();
+                options.WithOrigins("https://localhost:44358/").AllowAnyHeader().AllowAnyOrigin();
             });
         
 
