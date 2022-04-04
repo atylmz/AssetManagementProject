@@ -27,6 +27,7 @@ namespace AssetManagementAPI.DataAccess.UnitOfWork
             AssetBarcodes = new EfAssetBarcodeRepository(context);
             AssetStatus = new EfAssetStatusRepository(context);
             Prices = new EfPriceRepository(context);
+            Auth = new AuthRepository(context);
         }
 
         public IGroupRepository Groups { get; private set; }
@@ -40,6 +41,7 @@ namespace AssetManagementAPI.DataAccess.UnitOfWork
         public IAssetWithoutBarcodeRepository AssetWithoutBarcodes { get; private set; }
         public IAssetStatusRepository AssetStatus { get; private set; }
         public IPriceRepository Prices { get; private set; }
+        public IAuthRepository Auth { get; private set; }
 
         public void Dispose()
         {

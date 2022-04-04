@@ -234,3 +234,5 @@ C:\workspace\AssetManagementProject\AssetManagementUI\AssetManagementUI.UI\obj\D
 C:\workspace\AssetManagementProject\AssetManagementUI\AssetManagementUI.UI\obj\Debug\net5.0\ref\AssetManagementUI.UI.dll
 C:\workspace\AssetManagementProject\AssetManagementUI\AssetManagementUI.UI\obj\Debug\net5.0\AssetManagementUI.UI.pdb
 C:\workspace\AssetManagementProject\AssetManagementUI\AssetManagementUI.UI\obj\Debug\net5.0\AssetManagementUI.UI.genruntimeconfig.cache
+C:\workspace\AssetManagementProject\AssetManagementUI\AssetManagementUI.UI\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+C:\workspace\AssetManagementProject\AssetManagementUI\AssetManagementUI.UI\obj\Debug\net5.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs

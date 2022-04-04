@@ -519,6 +519,7 @@ namespace AssetManagementAPI.Entity.Entities
 
                 entity.Property(e => e.ModifiedDate).HasColumnType("date");
 
+
                 entity.Property(e => e.PasswordHash).HasMaxLength(50);
 
                 entity.Property(e => e.PasswordSalt).HasMaxLength(50);

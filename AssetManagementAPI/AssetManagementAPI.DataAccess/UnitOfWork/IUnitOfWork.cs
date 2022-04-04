@@ -20,6 +20,7 @@ namespace AssetManagementAPI.DataAccess.UnitOfWork
         IAssetWithoutBarcodeRepository AssetWithoutBarcodes { get; }
         IAssetStatusRepository AssetStatus { get; }
         IPriceRepository Prices { get; }
+        IAuthRepository Auth { get; }
         int SaveChanges();
     }
 }

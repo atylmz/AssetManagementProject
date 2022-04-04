@@ -103,7 +103,6 @@ C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bi
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -150,3 +149,4 @@ C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\ob
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\obj\Debug\net5.0\ref\AssetManagementAPI.API.dll
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\obj\Debug\net5.0\AssetManagementAPI.API.pdb
 C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\obj\Debug\net5.0\AssetManagementAPI.API.genruntimeconfig.cache
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

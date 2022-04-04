@@ -10,3 +10,15 @@ C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Core\obj\Debu
 C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.dll
 C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\ref\AssetManagementAPI.Core.dll
 C:\workspace\AssetManagement\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.pdb
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\bin\Debug\net5.0\AssetManagementAPI.Core.deps.json
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\bin\Debug\net5.0\AssetManagementAPI.Core.dll
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\bin\Debug\net5.0\ref\AssetManagementAPI.Core.dll
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\bin\Debug\net5.0\AssetManagementAPI.Core.pdb
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.csproj.AssemblyReference.cache
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.AssemblyInfoInputs.cache
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.AssemblyInfo.cs
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.csproj.CoreCompileInputs.cache
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.dll
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\ref\AssetManagementAPI.Core.dll
+C:\workspace\AssetManagementProject\AssetManagementAPI\AssetManagementAPI.Core\obj\Debug\net5.0\AssetManagementAPI.Core.pdb

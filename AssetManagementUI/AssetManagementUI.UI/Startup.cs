@@ -26,6 +26,8 @@ namespace AssetManagementUI.UI
         {
             services.AddControllersWithViews();
 
+            services.AddSession();
+
             services.AddHttpClient<ComboboxFillerProvider>(options =>
             {
                 options.BaseAddress = new Uri(Configuration["baseAddress"]);
@@ -36,7 +38,12 @@ namespace AssetManagementUI.UI
             {
                 options.BaseAddress = new Uri(Configuration["baseAddress"]);
             });
-            
+
+            services.AddHttpClient<AuthProvider>(options =>
+            {
+                options.BaseAddress = new Uri(Configuration["baseAddress"]);
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +63,8 @@ namespace AssetManagementUI.UI
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 

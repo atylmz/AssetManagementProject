@@ -8,6 +8,8 @@
 <script src="~/lib/font-awesome/js/all.js"></script>
 
 <div class="container">
+    <h3 class="display-5">Varlık Ekleme Ekranı</h3>
+    <hr />
     <form class="form" asp-controller="Assets" asp-action="add" method="post">
         <div class="row">
             <div class="col-md-6">
@@ -31,13 +33,13 @@
                     <span class="input-group-text"><i class="fa-solid fa-barcode"></i></span>
                 </div>
                 <div id="withoutBarcode" class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div><label><a style="color:red">* </a>Miktar</label></div>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" aria-label="grubu" asp-for="Quantity">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div><label><a style="color:red">* </a>Birim</label></div>
                         <div class="input-group mb-3">
                             <select class="form-select form-control" aria-label="unit" asp-for="UnitId">
@@ -69,7 +71,7 @@
                         @foreach (var item in ViewBag.group)
                         {
                             <option value="@item.GroupId">@item.Description</option>
-                        } 
+                        }
                     </select>
                 </div>
             </div>
@@ -112,7 +114,7 @@
                 <div><label><a style="color:red">* </a>Marka</label></div>
                 <div class="input-group mb-3">
                     <select class="form-select form-control" aria-label="Default select example" id="brand" asp-for="BrandId">
-                        <option value="default" selected>Seçiniz...</option>
+                        <option value="something" selected>Seçiniz...</option>
                         @foreach (var item in ViewBag.brand)
                         {
                             <option value="@item.BrandId">@item.Description</option>
@@ -131,12 +133,8 @@
             <div name="option" class="col-md-6">
                 <div><label><a style="color:red">* </a>Model</label></div>
                 <div class="input-group mb-3">
-                    <select class="form-select form-control " aria-label="Default select example" disabled asp-for="ModelId">
+                    <select class="form-select form-control " aria-label="Default select example" id="model" disabled asp-for="ModelId">
                         <option value="default" selected>Seçiniz...</option>
-                        @foreach (var item in ViewBag.model)
-                        {
-                            <option value="@item.ModelId">@item.Description</option>
-                        }
                     </select>
                 </div>
             </div>
@@ -144,7 +142,7 @@
                 <div><label>Ürünün Güncel Para Birimi</label></div>
                 <div class="input-group mb-3">
                     <select class="form-select form-control" aria-label="Default select example" asp-for="PriceCurrencyId">
-                        <option value="default" selected>Seçiniz...</option>
+                        <option value="space" selected>Seçiniz...</option>
                         @foreach (var item in ViewBag.currency)
                         {
                             <option value="@item.CurrencyId">@item.Description</option>
@@ -161,7 +159,7 @@
                     <select class="form-select form-control" aria-label="Default select example" asp-for="Guarantee">
                         <option value="default" selected>Seçiniz...</option>
                         <option value="true">Evet</option>
-                        <option value="false">Hayır</option>        
+                        <option value="false">Hayır</option>
                     </select>
                 </div>
             </div>
@@ -180,6 +178,7 @@
 
 
 <script>
+   
     $(document).ready(() => {
         var now = new Date();
         var day = ("0" + now.getDate()).slice(-2);
@@ -200,24 +199,36 @@
                 $('#withoutBarcode').show();
             }
 
-        })
-        $.validator.addMethod("valueNotEquals", function (value, element, arg) {
-            return arg !== value;
-        }, "Value must not equal arg.");
-
-        $('#submit').click(() => {
-            $("div[name='option']").validate({
-                rules: {
-                    SelectName: { valueNotEquals: "default" }
-                },
-                messages: {
-                    SelectName: { valueNotEquals: "Please select an item!" }
-                }
-
-            });
         });
-       
+        $("#brand").change(function () {
+            var deger = "";
+            $("#model option").each(function () {
+                this.remove();
+            });
+            $("#model").removeAttr("disabled");
+            $("#brand option:selected").each(function () {
+                deger += $(this).val();
+                $.ajax({
+                    url: "https://localhost:44358/assets/getmodel?id=" + deger,
+                    type: "post",
+                    dataType: "json",
+                    contentType: "application/json: charset = UTF-8;",
+                    success: function (result) {
+                        console.log(result);
+                        $(result).each(function (index, value) {
+                            var option = "<option value='" + value.modelId + "'>" + value.description + "</option>";
+                            $("#model").append(option);
+                        })
+                    },
+                    error: function (data) {
+                       
+                    }
+                    
+                })
+            });
 
+        });
+        
 
     });
 

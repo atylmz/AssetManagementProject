@@ -42,5 +42,19 @@ namespace AssetManagementUI.UI.Controllers
            
             return Redirect("Add");
         }
+        [HttpPost]
+        public async Task<JsonResult> GetModel([FromQuery]int id)
+        {
+            List<ModelDTO> model = new List<ModelDTO>();
+            var data = await _pro.GetComboboxFiller();
+            foreach (var item in data.Models)
+            {
+                if (item.BrandId == id)
+                {
+                    model.Add(item);
+                }
+            }
+            return Json(model);
+        }
     }
 }

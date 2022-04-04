@@ -6,6 +6,7 @@ using AssetManagementAPI.DataAccess.Repository.Repository;
 using AssetManagementAPI.DataAccess.UnitOfWork;
 using AssetManagementAPI.DtoModel.Mapping;
 using AssetManagementAPI.Entity.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,10 +16,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace AssetManagementAPI.API
@@ -62,7 +65,22 @@ namespace AssetManagementAPI.API
             services.AddTransient(typeof(IAssetWithoutBarcodeService), typeof(AssetWithoutBarcodeManager));
             services.AddTransient(typeof(IPriceService), typeof(PriceManager));
             services.AddTransient(typeof(IListOfAssetsService), typeof(ListOfAssets));
-     
+            services.AddTransient(typeof(IAuthService), typeof(AuthManager));
+
+            #region Token
+            var token = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value);
+            services.AddAuthorization();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(token),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                };
+            }); 
+            #endregion
 
 
         }
@@ -87,6 +105,7 @@ namespace AssetManagementAPI.API
         
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
