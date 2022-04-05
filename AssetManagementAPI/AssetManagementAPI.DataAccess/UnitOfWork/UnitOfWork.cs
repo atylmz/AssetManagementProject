@@ -28,6 +28,12 @@ namespace AssetManagementAPI.DataAccess.UnitOfWork
             AssetStatus = new EfAssetStatusRepository(context);
             Prices = new EfPriceRepository(context);
             Auth = new AuthRepository(context);
+            Status = new EfStatusRepository(context);
+            Actions = new EfActionRepository(context);
+            ActionStatus = new EfActionStatusRepository(context);
+            AssetOwner = new EfAssetOwnerRepository(context);
+            Owners = new EfOwnerRepository(context);
+            OwnerType = new EfOwnerTypeRepository(context);
         }
 
         public IGroupRepository Groups { get; private set; }
@@ -42,6 +48,12 @@ namespace AssetManagementAPI.DataAccess.UnitOfWork
         public IAssetStatusRepository AssetStatus { get; private set; }
         public IPriceRepository Prices { get; private set; }
         public IAuthRepository Auth { get; private set; }
+        public IStatusRepository Status { get; private set; }
+        public IActionRepository Actions { get; private set; }
+        public IActionStatusRepository ActionStatus { get; private set; }
+        public IAssetOwnerRepository AssetOwner { get; private set; }
+        public IOwnerRepository Owners { get; private set; }
+        public IOwnerTypeRepository OwnerType { get; private set; }
 
         public void Dispose()
         {

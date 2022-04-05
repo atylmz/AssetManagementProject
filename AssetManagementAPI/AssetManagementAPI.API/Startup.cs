@@ -66,6 +66,9 @@ namespace AssetManagementAPI.API
             services.AddTransient(typeof(IPriceService), typeof(PriceManager));
             services.AddTransient(typeof(IListOfAssetsService), typeof(ListOfAssets));
             services.AddTransient(typeof(IAuthService), typeof(AuthManager));
+            services.AddTransient(typeof(IStatusService), typeof(StatusManager));
+            services.AddTransient(typeof(IActionService), typeof(ActionManager));
+            services.AddTransient(typeof(IAssetOwnerService), typeof(AssetOwnerManager));
 
             #region Token
             var token = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value);

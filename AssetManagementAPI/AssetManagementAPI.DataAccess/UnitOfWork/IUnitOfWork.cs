@@ -21,6 +21,12 @@ namespace AssetManagementAPI.DataAccess.UnitOfWork
         IAssetStatusRepository AssetStatus { get; }
         IPriceRepository Prices { get; }
         IAuthRepository Auth { get; }
+        IStatusRepository Status { get; }
+        IActionRepository Actions { get; }
+        IActionStatusRepository ActionStatus { get; }
+        IAssetOwnerRepository AssetOwner { get; }
+        IOwnerRepository Owners { get; }
+        IOwnerTypeRepository OwnerType { get; }
         int SaveChanges();
     }
 }

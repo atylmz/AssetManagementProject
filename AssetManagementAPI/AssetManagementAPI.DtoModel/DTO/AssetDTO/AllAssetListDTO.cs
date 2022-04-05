@@ -8,10 +8,11 @@ namespace AssetManagementAPI.DtoModel.DTO.AssetDTO
 {
     public class AllAssetListDTO
     {
+        public int AssetId { get; set; }
         public string Barcode { get; set; }
         public string AssetType { get; set; }
         public decimal? Price { get; set; }
         public string Brand { get; set; }
-        public string Model{ get; set; }
+        public string Model { get; set; }
     }
 }

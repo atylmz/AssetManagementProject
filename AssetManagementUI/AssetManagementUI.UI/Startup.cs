@@ -28,6 +28,11 @@ namespace AssetManagementUI.UI
 
             services.AddSession();
 
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = Configuration.GetConnectionString("Redis");
+            });
+
             services.AddHttpClient<ComboboxFillerProvider>(options =>
             {
                 options.BaseAddress = new Uri(Configuration["baseAddress"]);
@@ -73,7 +78,7 @@ namespace AssetManagementUI.UI
             {
                 endpoints.MapControllerRoute(
                    name: "default",
-                   pattern: "{controller=Home}/{action=Index}/{id?}");
+                   pattern: "{controller=Login}/{action=Index}/{id?}");
 
                 endpoints.MapControllerRoute(
                   name: "areas",

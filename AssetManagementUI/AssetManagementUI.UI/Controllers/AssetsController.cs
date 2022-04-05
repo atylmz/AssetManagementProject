@@ -1,6 +1,8 @@
 ﻿using AssetManagementUI.UI.Models.ApiModels;
 using AssetManagementUI.UI.Provider;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
+using AssetManagementUI.UI.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,16 +14,25 @@ namespace AssetManagementUI.UI.Controllers
     {
         private readonly ComboboxFillerProvider _pro;
         private readonly AssetProvider _asset;
+        private readonly IDistributedCache _cache;
 
-        public AssetsController(ComboboxFillerProvider pro, AssetProvider asset)
+        public AssetsController(ComboboxFillerProvider pro, AssetProvider asset, IDistributedCache cache)
         {
             _pro = pro;
             _asset = asset;
+            _cache = cache;
         }
 
         public async Task<IActionResult> Add()
         {
-            ComboboxDTO data = await _pro.GetComboboxFiller();
+            ComboboxDTO data;
+            string key = "combobox_" + DateTime.Now.ToString("yyyyMMdd");
+            data = await _cache.GetRecordAsync<ComboboxDTO>(key);
+            if(data == null)
+            {
+                data = await _pro.GetComboboxFiller();
+                await _cache.SetRecordAsync<ComboboxDTO>(key, data);
+            } 
             ViewBag.brand = data.Brands;
             ViewBag.model = data.Models;
             ViewBag.currency = data.Currencies;
@@ -34,6 +45,7 @@ namespace AssetManagementUI.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(AssetFullDTO dto)
         {
+
             dto.Date = DateTime.Now;
             dto.CompanyId = 1;
             dto.CreatedDate = DateTime.Now;
