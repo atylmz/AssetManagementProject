@@ -18,6 +18,7 @@ namespace AssetManagementAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class ComboboxFillController : ControllerBase
     {
         private readonly IBrandService _brand;

@@ -1,7 +1,9 @@
 using AssetManagementUI.UI.Provider;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +30,10 @@ namespace AssetManagementUI.UI
 
             services.AddSession();
 
+            services.AddAuthorization();
+
+            
+
             services.AddStackExchangeRedisCache(options =>
             {
                 options.Configuration = Configuration.GetConnectionString("Redis");
@@ -48,6 +54,9 @@ namespace AssetManagementUI.UI
             {
                 options.BaseAddress = new Uri(Configuration["baseAddress"]);
             });
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options => options.LoginPath = "/Login/Index/");
 
         }
 
@@ -70,6 +79,7 @@ namespace AssetManagementUI.UI
             app.UseRouting();
 
             app.UseSession();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

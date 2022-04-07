@@ -1,5 +1,6 @@
 ﻿using AssetManagementAPI.Bussiness.Abstract;
 using AssetManagementAPI.DtoModel.DTO.AssetOwnerDTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -11,6 +12,7 @@ namespace AssetManagementAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class ActionController : ControllerBase
     {
         private readonly IAssetOwnerService _service;

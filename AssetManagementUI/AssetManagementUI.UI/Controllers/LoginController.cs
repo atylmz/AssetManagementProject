@@ -6,9 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AssetManagementUI.UI.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         AuthProvider _auth;
@@ -22,15 +24,18 @@ namespace AssetManagementUI.UI.Controllers
         {
             return View();
         }
+        [HttpPost]
         public async Task<IActionResult> Login(LoginDTO dto)
         {
+            
             string token = HttpContext.Session.MySessionGet<string>("token");
             PersonnelWithTokenDTO user = new PersonnelWithTokenDTO();
             if (token == null)
             {
                 user = await _auth.Login(dto.Username, dto.Password);
-                HttpContext.Session.MySessionSet("token", user.Token);
-                HttpContext.Session.MySessionSet("user", user);
+                token = user.Token;
+                HttpContext.Session.MySessionSet("token", token);
+                //HttpContext.Session.MySessionSet("user", user);
                 return RedirectToAction("Index", "Home");
             }
 

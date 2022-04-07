@@ -16,8 +16,12 @@ namespace AssetManagementUI.UI.Provider
         {
             _client = client;
         }
-        public async Task<string> AddAsset(AssetFullDTO dto)
+        public async Task<string> AddAsset(AssetFullDTO dto, string token = null)
         {
+            if(token == null)
+            {
+                return "Token Not Found";
+            }
             var serialized = new StringContent(JsonConvert.SerializeObject(dto));
             serialized.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
             var post = await _client.PostAsync("asset/addasset", serialized);
